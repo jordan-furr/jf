@@ -1,10 +1,12 @@
-import type { Metadata } from "next";
+'use client';
 import "../globals.css";
 import { Header } from "../components/header";
+import { usePathname } from "next/navigation";
+import SideBar from "../components/sidebar";
 
-export const metadata: Metadata = {
-  title: "Jordan Furr",
-  description: "Jordan Furr",
+
+const images: Record<string, string> = {
+  "/about": "pink-jordanfurr.png"
 };
 
 export default function RootLayout({
@@ -12,10 +14,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const pathname = usePathname();
+  const imageSrc = images[pathname] || "/pink-jordanfurr.png";
+
   return (
     <html lang="en">
       <body>
-        <Header/>
+        <Header />
+        <SideBar imageSrc={imageSrc} />
         {children}
       </body>
     </html>
