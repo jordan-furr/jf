@@ -19,7 +19,6 @@ export default function SideBar({ imageSrc }: SideBarProps) {
     ];
 
     const pathname = usePathname();
-    const activeItem = navItems.find((item) => item.href === pathname);
 
     return (
         <div className='sidebar'>
