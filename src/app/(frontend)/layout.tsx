@@ -6,7 +6,12 @@ import SideBar from "../components/sidebar";
 
 
 const images: Record<string, string> = {
-  "/about": "pink-jordanfurr.png"
+  "/about": "/pink-jordanfurr.png",
+  "/database": "/yellow-jordanfurr.png",
+  "/design": "/red-jordanfurr.png",
+  "/projects": "/green-jordanfurr.png",
+  "/timeline": "/blue-jordanfurr.png",
+  "/writing": "/navy-jordanfurr.png",
 };
 
 export default function RootLayout({
