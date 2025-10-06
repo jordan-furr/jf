@@ -4,7 +4,6 @@ import { Header } from "../components/header";
 import { usePathname } from "next/navigation";
 import SideBar from "../components/sidebar";
 
-
 const images: Record<string, string> = {
   "/about": "/pink-jordanfurr.png",
   "/database": "/yellow-jordanfurr.png",
@@ -12,6 +11,7 @@ const images: Record<string, string> = {
   "/projects": "/green-jordanfurr.png",
   "/timeline": "/blue-jordanfurr.png",
   "/writing": "/navy-jordanfurr.png",
+  "/posts": "/navy-jordanfurr.png",
 };
 
 export default function RootLayout({

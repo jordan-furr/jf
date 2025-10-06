@@ -979,3 +979,25 @@ li {
   flex-direction: column;
   gap: 2.5rem;
 }
+
+
+
+/*thoughts writing page*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.underline {
+  text-decoration: underline;
+}
