@@ -11,7 +11,7 @@ interface SideBarProps {
 export default function SideBar({ imageSrc }: SideBarProps) {
 
     const navItems = [
-        { href: "/writing", label: "writing", color: "#ff1795" },
+        { href: "/writing", label: "thoughts", color: "#ff1795" },
         { href: "/design", label: "design", color: "#d70000" },
         { href: "/projects", label: "projects", color: "#255b35" },
         { href: "/timeline", label: "timeline", color: "#295f9c" },
@@ -22,15 +22,17 @@ export default function SideBar({ imageSrc }: SideBarProps) {
 
     return (
         <div className='sidebar'>
-            <Image
-                src={imageSrc}
-                alt="Jordan Furr Star with JF Initials"
-                width={300}
-                height={300}
-                layout="responsive"
-                className='sideStar'
-                priority
-            />
+            <Link href={"/"}>
+                <Image
+                    src={imageSrc}
+                    alt="Jordan Furr Star with JF Initials"
+                    width={300}
+                    height={300}
+                    layout="responsive"
+                    className='sideStar'
+                    priority
+                />
+            </Link>
             <div className='sideMenu'>
                 {navItems.map((item) => {
                     const isActive = pathname === item.href;
@@ -39,7 +41,7 @@ export default function SideBar({ imageSrc }: SideBarProps) {
                             key={item.href}
                             href={item.href}
                             className={`${isActive ? "activeLink" : ""}`}
-                            style={ isActive? {color: item.color} : undefined}
+                            style={isActive ? { color: item.color } : undefined}
                         >
                             <p className="wordLink">{item.label}</p>
                         </Link>

@@ -1,4 +1,3 @@
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -671,11 +670,11 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   align-items: center;
   position: fixed;
   width: 100%;
-  height: 4rem;
+  height: 5rem;
   z-index: 1000;
 }
 
@@ -683,19 +682,20 @@ a {
 
 /* home */
 .starBG {
-  width: 100%;
-  height: 72vh;
-  margin-top: 4rem;
+  width: auto;
+  height: 60vh;
+  margin: 1.5rem;
   background-image: url('/jf-animation-simple.gif');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  box-sizing: border-box;
 }
 
 .starMenu {
   display: flex;
   flex-direction: column;
-  width: 44vw;
+  width: 100%;
   margin: auto;
 }
 
@@ -705,57 +705,158 @@ a {
   justify-content: space-between;
   height: 5vh;
   align-items: center;
+  width: 100%;
 }
 
 .R1 {
-  margin-top: 14vh;
-  padding-left: 6rem;
-  padding-right: 5rem;
+  margin-top: 16vh;
+  padding-left: 3rem;
+  padding-right: 2rem;
 }
 
 .R2 {
-  margin-top: 27vh;
-  padding-left: 1rem;
-  padding-right: 2rem;
+  margin-top: 13vh;
+  padding: 0rem;
 }
 
 .R3 {
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 8vh;
 }
 
 
-@media (max-width: 500px) {
+
+@media (min-width: 400px) {
 
   .starBG {
-    height: 66vh;
+    margin-top: 2rem;
   }
 
-  .wordLink {
-    font-size: 16px;
+  .R1 {
+    margin-top: 15vh;
+    padding-left: 5rem;
+    padding-right: 3rem;
   }
 
-}
-
-
-@media (max-width: 800px) {
-  .header {
+  .R2 {
+    margin-top: 15vh;
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .starBG {
-    margin: 1rem;
-    width: auto;
+  .R3 {
+    margin-top: 9vh;
   }
 
-  .starMenu {
-    width: 100vw;
+}
+
+@media (min-width: 500px) {
+
+  .starBG {
+    margin-top: 3rem;
+  }
+
+  .R1 {
+    margin-top: 13vh;
+    padding-left: 6rem;
+    padding-right: 4rem;
+  }
+
+  .R2 {
+    padding: 0 2rem;
+    margin-top: 18vh;
+  }
+
+  .R3 {
+    margin-top: 11vh;
+  }
+
+}
+
+@media (min-width: 600px) {
+
+  .R1 {
+    margin-top: 12vh;
+    padding-left: 8rem;
+    padding-right: 7rem;
+  }
+
+  .R2 {
+    margin-top: 20vh;
+    padding: 0 4rem;
+  }
+
+  .R3 {
+    margin-top: 13vh;
   }
 
 }
 
 
+@media (min-width: 700px) {
+
+  .R1 {
+    padding-left: 12rem;
+    padding-right: 10rem;
+  }
+
+  .R2 {
+    padding: 0 6rem;
+  }
+
+}
+
+
+
+@media (min-width: 800px) {
+  .header {
+    padding: 0 2rem;
+  }
+
+  .starBG {
+    margin-top: 4rem;
+    height: 72vh;
+  }
+
+  .starMenu {
+    width: 90vw;
+  }
+
+  .R1 {
+    margin-top: 15vh;
+  }
+
+  .R2 {
+    margin-top: 24vh;
+  }
+
+  .R3 {
+    margin-top: 14vh;
+  }
+
+}
+
+
+@media (min-width: 900px) {
+
+  .starMenu {
+    width: 600px;
+  }
+
+  .R1 {
+    padding-left: 6rem;
+    padding-right: 4rem;
+  }
+
+  .R2 {
+    padding: 0rem;
+  }
+
+  .R3 {
+    padding-top: 1rem;
+  }
+
+}
 
 
 
@@ -763,15 +864,17 @@ a {
 .wordLink:hover {
   text-decoration: underline;
   cursor: pointer;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
   text-decoration-thickness: 2px;
 }
 
 .activeLink {
   text-decoration: underline;
-  text-underline-offset: 3px;
+  text-underline-offset: 2px;
   text-decoration-thickness: 2px;
 }
+
+
 
 /* page */
 .page {
@@ -801,12 +904,11 @@ a {
 
 .content {
   margin-left: 33.3vw;
-  width: 66.7vw;
+  width: 50vw;
   right: 0;
   display: flex;
-  padding-top: 4rem;
+  padding-top: 6rem;
   flex-direction: column;
-  padding-right: 2rem;
 }
 
 .pageTitle {
@@ -817,7 +919,8 @@ a {
 
 .subTitle {
   font-size: 18px;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .projectTitle {
@@ -827,8 +930,8 @@ a {
 }
 
 ul {
-  list-style:circle;
-  padding:  1rem 2rem;
+  list-style: circle;
+  padding: 1rem 2rem;
 }
 
 li {
@@ -837,4 +940,64 @@ li {
 
 .green {
   color: #7ab31f;
+}
+
+
+@media (max-width: 1300px) {
+  .sidebar {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 799px) {
+
+  .sidebar {
+    width: 260px;
+    position: relative;
+    margin: auto;
+    margin-top: 3rem;
+  }
+
+  .sideMenu {
+    display: none;
+  }
+
+  .content {
+    margin: 0;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+}
+
+
+
+/*project page*/
+
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+
+
+/*thoughts writing page*/
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+.underline {
+  text-decoration: underline;
 }
