@@ -2,8 +2,7 @@ export default function Page() {
   return (
     <div className="page">
       <div className="content">
-        <p className="pageTitle">database</p>
-        <p className="mb3">welcome to things I like!</p>
+        <p className="mb3">Welcome to Things I Like!</p>
         <p>...coming soon...</p>
       </div>
     </div>
