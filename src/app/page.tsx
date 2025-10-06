@@ -7,11 +7,11 @@ export default function Home() {
         <div className="starBG">
           <div className="starMenu">
             <div className="sRow R1">
-              <Link href="/writing"><p className="wordLink">writing</p></Link>
+              <Link href="/writing"><p className="wordLink">thoughts</p></Link>
               <Link href="/design"><p className="wordLink">design</p></Link>
             </div>
             <div className="sRow R2">
-              <Link href="/projects"><p className="wordLink">projects</p></Link>
+              <Link href="/projects"><p className="wordLink">project</p></Link>
               <Link href="/timeline"><p className="wordLink">timeline</p></Link>
             </div>
             <div className="sRow R3">
