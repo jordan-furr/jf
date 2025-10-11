@@ -11,11 +11,11 @@ interface SideBarProps {
 export default function SideBar({ imageSrc }: SideBarProps) {
 
     const navItems = [
-        { href: "/writing", label: "thoughts", color: "#ff1795" },
-        { href: "/design", label: "design", color: "#d70000" },
-        { href: "/projects", label: "projects", color: "#255b35" },
-        { href: "/timeline", label: "timeline", color: "#295f9c" },
-        { href: "/database", label: "database", color: "#b1c52c" },
+        { href: "/design", label: "Design", color: "#35C6FF" },
+        { href: "/writing", label: "Thoughts", color: "#0061D6" },
+        { href: "/dashboard", label: "Dashboard", color: "#55C500" },
+        { href: "/projects", label: "Projects", color: "#2418FF" },
+        { href: "/about", label: "About", color: "#f8671d" },
     ];
 
     const pathname = usePathname();

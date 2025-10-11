@@ -3,6 +3,7 @@ import { POST_QUERY } from "@/sanity/lib/queries";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { PortableText } from "next-sanity";
+import { PublishedAt } from "@/app/components/publishedAt";
 
 export default async function Page({
     params,
@@ -22,14 +23,15 @@ export default async function Page({
         <div className="page">
             <div className="content">
                 <div className="mb6">
-                    <h1 className="mb3">{post?.title}</h1>
+                    <h1 className="mb3 postTitle">{post?.title}</h1>
+                    <PublishedAt publishedAt={post?.publishedAt} />
                     {post?.body ? (
-                        <div className="prose">
+                        <div className="prose pt4">
                             <PortableText value={post.body} />
                         </div>
                     ) : null}
                 </div>
-                <Link href="/posts">&larr; Return to blog index</Link>
+                <Link href="/posts" className="wordLink">&larr; Return to blog index</Link>
             </div>
         </div>
     );

@@ -666,6 +666,10 @@ a {
 /***************************/
 /* header */
 
+* {
+  cursor: default;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -678,6 +682,10 @@ a {
   z-index: 1000;
 }
 
+.header p:hover {
+  cursor: pointer;
+}
+
 
 
 /* home */
@@ -685,7 +693,7 @@ a {
   width: auto;
   height: 60vh;
   margin: 1.5rem;
-  background-image: url('/jf-animation-simple.gif');
+  background-image: url('/jordanfurr-star.gif');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -868,6 +876,18 @@ a {
   text-decoration-thickness: 2px;
 }
 
+.underLink {
+  text-decoration: underline;
+  cursor: pointer;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 2px;
+}
+
+.underLink:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .activeLink {
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -919,23 +939,16 @@ a {
 
 .subTitle {
   font-size: 18px;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .projectTitle {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: .5rem;
-}
-
-ul {
-  list-style: circle;
-  padding: 1rem 2rem;
-}
-
-li {
-  margin-bottom: .15rem;
 }
 
 .green {
@@ -977,7 +990,7 @@ li {
 .projectList {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 
@@ -985,13 +998,24 @@ li {
 /*thoughts writing page*/
 ul {
   list-style: none;
-  margin: 0;
   padding: 0;
   margin-bottom: 2rem;
 }
 
 li {
-  margin-bottom: 1rem;
+  margin-bottom: .25rem;
+}
+
+.essayLine:hover {
+  color: #f8671d;
+}
+
+.orange {
+  color: #f8671d;
+}
+
+.gray {
+  color:  gray;
 }
 
 h1 {
@@ -1000,4 +1024,30 @@ h1 {
 
 .underline {
   text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.publishedDate {
+  width: 140px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.underline:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blogPrevCont {
+  margin-bottom: 4rem;
+}
+
+.hovBlack:hover {
+  color:#171717;
+}
+
+.postTitle {
+  font-size: 2rem;
 }
