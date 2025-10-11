@@ -5,18 +5,18 @@ import Link from 'next/link'
 export function Header() {
 
   const pathname = usePathname();
-  const isActive = "/about" === pathname;
+  const isActive = "/contact" === pathname;
 
   return (
     <div>
       <header className='header'>
         <Link href="/"><p>Jordan Furr</p></Link>
         <Link
-          href="/about"
+          href="/contact"
           className={`${isActive ? "activeLink" : ""}`}
-          style={isActive ? { color: "#ff1795" } : undefined}
+          style={isActive ? { color: "#B510FF" } : undefined}
         >
-          <p>about</p></Link>
+          <p>Contact</p></Link>
       </header>
     </div>
   )

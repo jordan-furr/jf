@@ -12,7 +12,7 @@ export default async function Page() {
   return (
     <div className="page">
       <div className="content">
-        <h1 className="mb3">Blog</h1>
+        <p className="mb3">BLOG</p>
         <ul>
             {posts.map((post) => (
                 <li key={post._id}>
@@ -27,7 +27,7 @@ export default async function Page() {
                 </li>
             ))}
         </ul>
-        <Link href="/writing">&larr; Return to 'thoughts'</Link>
+        <Link href="/writing" className="wordLink">&larr; Return to 'thoughts'</Link>
       </div>
     </div>
   );

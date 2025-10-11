@@ -5,13 +5,13 @@ import { usePathname } from "next/navigation";
 import SideBar from "../components/sidebar";
 
 const images: Record<string, string> = {
-  "/about": "/pink-jordanfurr.png",
-  "/database": "/yellow-jordanfurr.png",
-  "/design": "/red-jordanfurr.png",
-  "/projects": "/green-jordanfurr.png",
-  "/timeline": "/blue-jordanfurr.png",
-  "/writing": "/navy-jordanfurr.png",
-  "/posts": "/navy-jordanfurr.png",
+  "/about": "/yellow.jpg",
+  "/dashboard": "/lime.jpg",
+  "/design": "/sky.jpg",
+  "/projects": "/red.jpg",
+  "/writing": "/blue.jpg",
+  "/posts": "/blue.jpg",
+  "/contact": "/green.jpg",
 };
 
 export default function RootLayout({
@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
 
   const pathname = usePathname();
-  const imageSrc = images[pathname] || "/pink-jordanfurr.png";
+  const imageSrc = images[pathname] || "/blue.jpg";
 
   return (
     <html lang="en">

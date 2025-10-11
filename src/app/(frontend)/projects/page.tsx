@@ -5,6 +5,7 @@ export default function Page() {
   return (
     <div className="page">
       <div className="content">
+        <p className="mb3">PROJECTS</p>
         <div className="projectList">
           <p>I have collaborated on a variety of projects. Some of which are:</p>
           <div>

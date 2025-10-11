@@ -7,15 +7,15 @@ export default function Home() {
         <div className="starBG">
           <div className="starMenu">
             <div className="sRow R1">
-              <Link href="/writing"><p className="wordLink">thoughts</p></Link>
-              <Link href="/design"><p className="wordLink">design</p></Link>
+              <Link href="/writing"><p className="wordLink">Thoughts</p></Link>
+              <Link href="/design"><p className="wordLink">Design</p></Link>
             </div>
             <div className="sRow R2">
-              <Link href="/projects"><p className="wordLink">project</p></Link>
-              <Link href="/timeline"><p className="wordLink">timeline</p></Link>
+              <Link href="/projects"><p className="wordLink">Project</p></Link>
+              <Link href="/about"><p className="wordLink">About</p></Link>
             </div>
             <div className="sRow R3">
-              <Link href="/database"><p className="wordLink">database</p></Link>
+              <Link href="/dashboard"><p className="wordLink">Dashboard</p></Link>
             </div>
           </div>
         </div>
