@@ -27,7 +27,7 @@ export default async function Page() {
                 </li>
             ))}
         </ul>
-        <Link href="/writing" className="wordLink">&larr; Return to 'thoughts'</Link>
+        <Link href="/writing" className="wordLink">&larr; Return</Link>
       </div>
     </div>
   );
