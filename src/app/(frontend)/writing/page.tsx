@@ -27,7 +27,6 @@ export default async function Page() {
               </li>
             ))}
           </ul>
-          <Link href={"/posts"}> <span className="spirit-blue hovBlack">View all posts &rarr;</span></Link>
         </div>
 
         <p className="mb3">ESSAYS</p>

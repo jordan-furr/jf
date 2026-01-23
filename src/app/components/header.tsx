@@ -54,7 +54,7 @@ export default function Header() {
   return (
     <>
       <header className='header'>
-        <Link href="/"><p>Jordan Ellis Furr</p></Link>
+        <Link href="/"><p className="jef-title">Jordan Ellis Furr</p></Link>
         <div className="contactBtn">
           <Link
             href="/contact"
