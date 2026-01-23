@@ -16,7 +16,7 @@ export default function Page() {
           priority
         />
         <p className="mb3">Jordan Ellis Furr is xxxtra passionate about life. He is a writer, artist, designer, editor, developer, artist, athlete, and mystic. Based across Brooklyn and Paris, he creates dreams and basks in life.</p>
-        <p className="mb3">Let's be penpals, collaborate, or dream up a website. Something else? I'd love to hear from you.</p>
+        <p className="mb3">Let&apos;s be penpals, collaborate, or dream up a website. Something else? I&apos;d love to hear from you.</p>
         
         <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb2 underLink">jordan@jordanfurr.com</p></Link>
         <p className="mb3">Brooklyn, New York, 11211</p>

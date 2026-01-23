@@ -4,8 +4,6 @@ import { sanityFetch } from "@/sanity/lib/live";
 import { RECENT_POSTS_QUERY } from "@/sanity/lib/queries";
 import { PublishedAt } from "@/app/components/publishedAt";
 
-const options = { next: { revalidate: 60 } };
-
 export default async function Page() {
 
   const { data: posts } = await sanityFetch({ query: RECENT_POSTS_QUERY })
@@ -16,7 +14,7 @@ export default async function Page() {
         <p className="mb3 spirit-blue">LATEST</p>
         <div className="blogPrevCont">
           <ul>
-            {posts.map((post) => (
+            {posts.map((post: any) => (
               <li key={post._id}>
                 <Link
                   href={`/posts/${post?.slug?.current}`}
