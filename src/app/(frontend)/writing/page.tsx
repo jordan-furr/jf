@@ -13,7 +13,7 @@ export default async function Page() {
   return (
     <div className="page">
       <div className="content">
-        <p className="mb3">LATEST</p>
+        <p className="mb3 spirit-blue">LATEST</p>
         <div className="blogPrevCont">
           <ul>
             {posts.map((post) => (
@@ -21,21 +21,21 @@ export default async function Page() {
                 <Link
                   href={`/posts/${post?.slug?.current}`}
                 >
-                  <div className="flex-row pointer">
+                  <div className="flex-row pointer blogLine">
                     <PublishedAt publishedAt={post?.publishedAt} />
-                    <p className="underline">{post?.title}</p>
+                    <p className="underline flexible">{post?.title}</p>
                   </div>
                 </Link>
               </li>
             ))}
           </ul>
-          <Link href={"/posts"}> <span className="orange hovBlack">View all posts &rarr;</span></Link>
+          <Link href={"/posts"}> <span className="spirit-blue hovBlack">View all posts &rarr;</span></Link>
         </div>
 
         <p className="mb3">ESSAYS</p>
-        <p className="mb2">I write memoir-theory, blending my personal narrative with nmodern social theory. I fell in love with the genre while studying American Culture at the University of Michigan.</p>
-        <p>My work reflects a sharp, reflective voice. Texting on a Horse, a debut essay collection reflects on:</p>
-        <ul>
+        <p className="mb3">I write memoir-theory. I write to uplift. My work reflects a sharp, reflective voice.</p>
+        <p className="mb3">Texting on a Horse, a debut essay collection set to be released in 2026 reflects on:</p>
+        <ul className="essays">
           {essays.map((item) => {
             return (
               <li key={item.title}><p className="essayLine">{item.title}</p></li>

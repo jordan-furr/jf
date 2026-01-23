@@ -5,7 +5,7 @@ export default function Page() {
   return (
     <div className="page">
       <div className="content">
-        <p className="mb3">ABOUT</p>
+        <p className="mb3 spirit-blue">ABOUT</p>
         <Image
           src={"/jordan.jpeg"}
           alt="Jordan Furr"
@@ -15,9 +15,13 @@ export default function Page() {
           className="mb3"
           priority
         />
-        <p className="mb3">Jordan Ellis Furr is an xxxtra multi & passionate creator! Based in Brooklyn, he creates web art, websites for clients, essays, textiles, videos, and more. He would love to hear from you to discuss, become penpals, collaborate, dream up a website, or something else. Please don&apos;t hesitate to send him an email.</p>
+        <p className="mb3">Jordan Ellis Furr is xxxtra passionate about life. He is a writer, artist, designer, editor, developer, artist, athlete, and mystic. Based across Brooklyn and Paris, he creates dreams and basks in life.</p>
+        <p className="mb3">Let's be penpals, collaborate, or dream up a website. Something else? I'd love to hear from you.</p>
+        
+        <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb2 underLink">jordan@jordanfurr.com</p></Link>
+        <p className="mb3">Brooklyn, New York, 11211</p>
+
         <Link href="/writing"><p className="wordLink orange mb3">Read my blog &rarr;</p></Link>
-        <p>jordan@jordanfurr.com</p>
       </div>
     </div>
   );

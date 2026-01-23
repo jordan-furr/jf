@@ -686,6 +686,67 @@ a {
   cursor: pointer;
 }
 
+.menuToggleIcon {
+  width: 33px;
+  position: fixed;
+  right: 1.5rem;
+  height: auto;
+  z-index: 2000;
+  transition: 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.menuToggleIcon:hover {
+  transform: rotateY(11deg);
+}
+
+.spiralIcon {
+  cursor: pointer;
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transition: max-height 0.5s ease;
+  background: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.15s;
+  min-height: 100vh;
+}
+
+.menuOverlay.menuOpen {
+  min-height: 100vh;
+  transform: translateX(0);
+}
+
+.menuCont {
+  padding: 6rem 2rem 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.menuItem {
+  padding-bottom: .33rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.menuItem:hover {
+  color: #0077ed;
+  cursor: pointer;
+}
+
+
+
+
+
 
 
 /* home */
@@ -895,7 +956,6 @@ a {
 }
 
 
-
 /* page */
 .page {
   display: flex;
@@ -971,7 +1031,8 @@ a {
     margin-top: 3rem;
   }
 
-  .sideMenu {
+  .sideMenu,
+  .deskStar {
     display: none;
   }
 
@@ -979,6 +1040,23 @@ a {
     margin: 0;
     width: 100%;
     padding: 1.5rem;
+    padding-top: 3.3rem;
+  }
+
+  .contactBtn {
+    display: none;
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .mobileStar {
+    display: none;
+  }
+
+  .menuToggleIcon {
+    display: none;
   }
 
 }
@@ -990,7 +1068,7 @@ a {
 .projectList {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.33rem;
 }
 
 
@@ -1000,6 +1078,14 @@ ul {
   list-style: none;
   padding: 0;
   margin-bottom: 2rem;
+}
+
+.essays {
+  list-style: circle;
+}
+
+.essays li {
+  margin-left: 1rem;
 }
 
 li {
@@ -1014,8 +1100,12 @@ li {
   color: #f8671d;
 }
 
+.spirit-blue {
+  color: #0077ed;
+}
+
 .gray {
-  color:  gray;
+  color: gray;
 }
 
 h1 {
@@ -1028,7 +1118,7 @@ h1 {
 }
 
 .publishedDate {
-  width: 140px;
+  flex: 0 0 140px;
 }
 
 .pointer {
@@ -1044,8 +1134,18 @@ h1 {
   margin-bottom: 4rem;
 }
 
+.blogLine {
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.flexible {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .hovBlack:hover {
-  color:#171717;
+  color: #171717;
 }
 
 .postTitle {
