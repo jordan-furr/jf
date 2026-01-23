@@ -7,7 +7,7 @@ export default function Page() {
       <div className="content">
         <p className="mb3 spirit-blue">PROJECTS</p>
         <div className="projectList">
-          <p>I've worked on many projects. A few select collaborations:</p>
+          <p>I&pos;ve worked on many projects. A few select collaborations:</p>
           <div>
             <p className="subTitle">STAR Laces <Link href={"https://starlaces.org/"} target="_" className="wordLink green">&#8599;</Link></p>
             <Image
