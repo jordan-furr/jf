@@ -14,7 +14,7 @@ export default async function Page() {
         <p className="mb3 spirit-blue">LATEST</p>
         <div className="blogPrevCont">
           <ul>
-            {posts.map((post) => (
+            {posts.map((post: any) => (
               <li key={post._id}>
                 <Link
                   href={`/posts/${post?.slug?.current}`}
