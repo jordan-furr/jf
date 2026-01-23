@@ -31,7 +31,7 @@ export default async function Page({
                         </div>
                     ) : null}
                 </div>
-                <Link href="/posts" className="wordLink">&larr; Return to blog index</Link>
+                <Link href="/writing" className="wordLink">&larr; Return</Link>
             </div>
         </div>
     );
