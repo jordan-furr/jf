@@ -11,8 +11,9 @@ export default async function Page() {
   return (
     <div className="page">
       <div className="content">
-        <p className="mb3 spirit-blue">LATEST</p>
-        <div className="blogPrevCont">
+        <p className="mb5">"Letters" coming this Lunar New Year</p>
+        
+        {/* <div className="blogPrevCont">
           <ul>
             {posts.map((post: any) => (
               <li key={post._id}>
@@ -27,9 +28,9 @@ export default async function Page() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
-        <p className="mb3">ESSAYS</p>
+        <p className="mb3">...</p>
         <p className="mb3">I write memoir-theory. I write to uplift. My work reflects a sharp, reflective voice.</p>
         <p className="mb3">Texting on a Horse, a debut essay collection set to be released in 2026 reflects on:</p>
         <ul className="essays">
