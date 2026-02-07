@@ -1,28 +1,32 @@
 export const likes = [
-  { title: "Horses" },
   { title: "Wind" },
-  { title: "Wolves" },
+  { title: "Horses" },
   { title: "Rivers" },
-  { title: "Chocolate" },
+
+  { title: "Wolves" },
+  { title: "Breath" },
+  { title: "Light" },
+  { title: "Paper" },
+
   { title: "Stars" },
   { title: "Incense" },
+  { title: "Chocolate" },
   { title: "Love" },
-  { title: "Fire" },
-  { title: "Light" },
+
+
   { title: "Trees" },
   { title: "Mountains" },
   { title: "Bread" },
+
   { title: "Honesty" },
+  { title: "Fire" },
   { title: "Spirit" },
   { title: "Running" },
   { title: "The Moon" },
   { title: "Colors" },
   { title: "Textiles" },
   { title: "Stickers" },
-  { title: "Bread" },
-  { title: "Books" },
-  { title: "Paper" },
+  { title: "Words" },
   { title: "Tea" },
-  { title: "Jaguars" },
   { title: "Seasons" }
 ];

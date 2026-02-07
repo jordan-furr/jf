@@ -11,9 +11,9 @@ interface SideBarProps {
 export default function SideBar({ imageSrc }: SideBarProps) {
 
     const navItems = [
-        { href: "/design", label: "Design", color: "#35C6FF" },
+        { href: "/web", label: "Websites", color: "#35C6FF" },
         { href: "/writing", label: "Writing", color: "#0061D6" },
-        { href: "/dashboard", label: "Database", color: "#55C500" },
+        { href: "/art", label: "Art", color: "#55C500" },
         { href: "/projects", label: "Projects", color: "#2418FF" },
         { href: "/about", label: "About", color: "#f8671d" },
     ];

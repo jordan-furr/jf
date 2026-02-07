@@ -796,7 +796,6 @@ a {
 }
 
 
-
 @media (min-width: 440px) {
 
   .starBG {
@@ -1106,6 +1105,11 @@ li {
   color: #0077ed;
 }
 
+.hover-spirit:hover {
+  color: #0077ed;
+}
+
+
 .gray {
   color: gray;
 }
@@ -1153,3 +1157,35 @@ h1 {
 .postTitle {
   font-size: 2rem;
 }
+
+
+
+
+/* fiber art*/
+.photo-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.coaster {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.coaster-img {
+  object-fit: cover;
+}
+
+.coaster-img:hover{
+  transform: scale(101%);
+}
+
+@media (max-width: 799px) {
+  .photo-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+

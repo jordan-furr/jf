@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { likes } from "@/app/likes";
+
 
 export default function Page() {
   return (
@@ -14,13 +16,22 @@ export default function Page() {
           className="mb3"
           priority
         />
-        <p className="mb3">Jordan Ellis Furr is xxxtra passionate about life. He is a writer, artist, designer, editor, developer, artist, athlete, and mystic. Based across Brooklyn and Paris, he creates dreams and basks in life.</p>
-        <p className="mb3">Let&apos;s be penpals, collaborate, or dream up a website. Something else? I&apos;d love to hear from you.</p>
-        
-        <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb2 underLink">jordan@jordanfurr.com</p></Link>
-        <p className="mb3">Brooklyn, New York, 11211</p>
+        <p className="mb3">Jordan Ellis Furr is xxxtra. Writer, artist, designer, editor, developer, runner, friend, contrarian. Between Brooklyn and Paris, he basks in life.</p>
+        <p className="mb1">Let&apos;s be penpals or talk about dreams. I&apos;d love to hear from you.</p>
 
-        <Link href="/writing"><p className="wordLink orange mb3">Read my blog &rarr;</p></Link>
+        <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb2 underLink">jordan@jordanfurr.com</p></Link>
+        <p className="mb5">Brooklyn, New York, 11211</p>
+
+        <div>
+          <p className="mb3 spirit-blue">Things I Love</p>
+          <ul className="likes">
+            {likes.map((item) => {
+              return (
+                <li key={item.title}><span className="hover-spirit">{item.title}</span></li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </div>
   );
