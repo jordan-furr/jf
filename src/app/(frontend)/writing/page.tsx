@@ -11,7 +11,7 @@ export default async function Page() {
   return (
     <div className="page">
       <div className="content">
-        <p className="mb5">"Letters" coming this Lunar New Year</p>
+       
         
         {/* <div className="blogPrevCont">
           <ul>
@@ -30,16 +30,16 @@ export default async function Page() {
           </ul>
         </div> */}
 
-        <p className="mb3">...</p>
-        <p className="mb3">I write memoir-theory. I write to uplift. My work reflects a sharp, reflective voice.</p>
-        <p className="mb3">Texting on a Horse, a debut essay collection set to be released in 2026 reflects on:</p>
-        <ul className="essays">
+        <p className="mb3">I believe in honesty. I sit with what is. I write memoir and memoir-theory. I write to spread light. I write with defiant precision about: sense of self, hard truths, and growth.</p>
+        <p className="mb3"><i>Texting on a Horse</i>, a collection of essays, is set to be released in the Fall of 2026.</p>
+        {/* <ul className="essays mb5">
           {essays.map((item) => {
             return (
               <li key={item.title}><p className="essayLine">{item.title}</p></li>
             );
           })}
-        </ul>
+        </ul> */}
+         <p className="mb5 spirit-blue"><i>Letters</i>, monthly installments, begin this Lunar New Year (2/17/2026)</p>
       </div>
     </div>
   );
