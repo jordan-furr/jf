@@ -5,9 +5,8 @@ export default function Page() {
   return (
     <div className="page">
       <div className="content">
-        <p className="mb5">I am a fiber artist at large. Quilting has my heart.</p>
-
-        <p className="mb3">COASTERS, 2025</p>
+        {/* <p className="mb5">I am a fiber artist at large. Quilting has my heart.</p>*/}
+         <p className="mb3">COASTERS, 2025</p>
         <div className="photo-grid">
 
           {imageOrder.map((n) => (
