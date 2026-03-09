@@ -926,6 +926,11 @@ a {
     padding-top: 1rem;
   }
 
+  .starMenu p {
+    font-size: 1.15rem;
+
+  }
+
 }
 
 
@@ -1081,6 +1086,11 @@ ul {
   margin-bottom: 2rem;
 }
 
+.journalEntry {
+  border: #171717 1px solid;
+  padding: 1rem;
+}
+
 .essays {
   list-style: circle;
 }
@@ -1108,7 +1118,6 @@ li {
 .hover-spirit:hover {
   color: #0077ed;
 }
-
 
 .gray {
   color: gray;
@@ -1161,6 +1170,7 @@ h1 {
 
 
 
+
 /* fiber art*/
 .photo-grid {
   width: 100%;
@@ -1179,7 +1189,7 @@ h1 {
   object-fit: cover;
 }
 
-.coaster-img:hover{
+.coaster-img:hover {
   transform: scale(101%);
 }
 
@@ -1189,3 +1199,32 @@ h1 {
   }
 }
 
+
+
+/* websites */
+.site-list {
+  position: relative;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+}
+
+.site-list p {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ff9fed;
+}
+
+.site-list p:hover {
+  text-decoration-color: #35C6FF;
+}
+
+@media (max-width: 1030px) {
+  .mobile-stack {
+    flex-direction: column;
+    width: 100%;
+  }
+}

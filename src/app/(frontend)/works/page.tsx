@@ -6,7 +6,7 @@ export default function Page() {
     <div className="page">
       <div className="content">
         <div className="projectList">
-          <p>I have founded or co-founded:</p>
+          <p>I have founded, co-founded, or contributed to:</p>
           <div>
             <p className="subTitle">STAR Laces <Link href={"https://starlaces.org/"} target="_" className="wordLink green">&#8599;</Link></p>
             <Image

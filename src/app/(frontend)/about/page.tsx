@@ -7,6 +7,8 @@ export default function Page() {
   return (
     <div className="page">
       <div className="content">
+        <p className="mb3">Jordan Ellis Furr is xxxtra.</p>
+       
         <Image
           src={"/jordan.jpeg"}
           alt="Jordan Furr"
@@ -16,14 +18,11 @@ export default function Page() {
           className="mb3"
           priority
         />
-        <p className="mb3">Jordan Ellis Furr is xxxtra. Writer, artist, designer, editor, developer, runner, friend, contrarian. Between Brooklyn and Paris, he basks in life.</p>
-        <p className="mb1">Let&apos;s be penpals or talk about dreams. I&apos;d love to hear from you.</p>
-
-        <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb2 underLink">jordan@jordanfurr.com</p></Link>
-        <p className="mb5">Brooklyn, New York, 11211</p>
+        <p className="mb3">Writer, artist, designer, editor, developer, runner, friend, contrarian. Let&apos;s be penpals or talk about dreams. I&apos;d love to hear from you. Brooklyn, New York, 11211.</p>
+        <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb3 underLink spirit-blue">jordan@jordanfurr.com</p></Link>
 
         <div>
-          <p className="mb3 spirit-blue">Things I Love</p>
+          <p className="mb1 spirit-blue">I Love...</p>
           <ul className="likes">
             {likes.map((item) => {
               return (
@@ -32,6 +31,7 @@ export default function Page() {
             })}
           </ul>
         </div>
+       
       </div>
     </div>
   );
