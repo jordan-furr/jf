@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Page() {
-  const imageOrder = [10, 1, 9, 4, 7,  3, 11, 2,8,  6,  5];
+  const imageOrder = [10, 1, 9, 4, 7,  3, 11, 2,8];
   return (
     <div className="page">
       <div className="content">

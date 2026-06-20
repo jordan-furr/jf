@@ -5,8 +5,9 @@ export default function Page() {
     <div className="page">
       <div className="content">
         <div className="mb6">
-          <p className="w-75 mb1">Seven years crafting websites+ digital identity for artists, writers, healers, designers, brands, and agencies.</p>
-          <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb4 underLink">jordan@jordanfurr.com</p></Link>
+          <p className="w-75 mb1">Seven years crafting websites + digital identities for creatives, projects, healers, practices, writers, and small brands</p>
+          <Link href={"https://badtaste.dev/"}target="_"><p className="mb1 underLink">badtaste.dev</p></Link>
+          <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb4 ">jordan@jordanfurr.com</p></Link>
           <div className="flex-row mobile-stack">
             <div className="mb4 w-50 mobile-stack">
               <p>CAPABILITIES</p>
@@ -42,10 +43,10 @@ export default function Page() {
 
           <div className="mb4">
             <p>?</p>
-            <p>New websites take 1-5 months after work begins. Costs range from $500-$11,000. Maintenance and revisions are always a possibility.</p>
+            <p>Projects take 1-4 months and cost between $500-$7,000.</p>
           </div>
 
-          <Link href="/contact"><p className="wordLink green">Get started &rarr;</p></Link>
+          <Link href="/contact"><p className="wordLink green">Contact &rarr;</p></Link>
         </div>
 
       </div>

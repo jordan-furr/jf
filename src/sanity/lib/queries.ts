@@ -4,6 +4,10 @@ export const POSTS_QUERY = defineQuery(`*[_type == "post" && defined(slug.curren
   _id, title, slug, category, publishedAt
 }`)
 
+export const ARIZONA_POSTS_QUERY = defineQuery(`*[_type == "post" && defined(slug.current) && category == "southwest"]|order(publishedAt desc)[0...100]{
+  _id, title, slug, category, publishedAt, location, body
+}`)
+
 export const RECENT_POSTS_QUERY = defineQuery(`*[_type == "post" && defined(slug.current) && category == null && category != "letter"]|order(publishedAt desc)[0...100]{
   _id, title, slug, category, publishedAt
 }`)

@@ -44,7 +44,7 @@ export default function Page() {
               className="mb2"
               priority
             />
-            <p>[drink-wall website, <Link href={"https://starlaces.org/"} target="_" className="wordLink green">live</Link>] a journal for visual drink + food displays in grocery and deli stores globally</p>
+            <p>[drink-wall website, <Link href={"https://drink-wall.com/"} target="_" className="wordLink green">live</Link>] a journal for visual drink + food displays in grocery and deli stores globally</p>
           </div>
           <div>
             <p className="subTitle">Green Butterfly</p>
