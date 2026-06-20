@@ -24,10 +24,10 @@ export default function RootLayout({
   const imageSrc = images[pathname] || "/blue.jpg";
 
   return (
-    <html lang="en">
+    <>
         <Header />
         <SideBar imageSrc={imageSrc} />
         {children}
-    </html>
+    </>
   );
 }

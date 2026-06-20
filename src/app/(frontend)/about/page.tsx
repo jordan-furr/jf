@@ -9,7 +9,7 @@ export default function Page() {
       <div className="content">
         <p className="mb3">Jordan Ellis Furr is xxxtra.</p>
        
-        <Image
+        {/* <Image
           src={"/jordan.jpeg"}
           alt="Jordan Furr"
           width={300}
@@ -17,7 +17,7 @@ export default function Page() {
           layout="responsive"
           className="mb3"
           priority
-        />
+        /> */}
         <p className="mb3">Writer, artist, designer, editor, developer, runner, friend, contrarian. Let&apos;s be penpals or talk about dreams. I&apos;d love to hear from you. Brooklyn, New York, 11211.</p>
         <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb3 underLink spirit-blue">jordan@jordanfurr.com</p></Link>
 

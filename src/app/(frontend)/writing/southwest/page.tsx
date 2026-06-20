@@ -19,13 +19,11 @@ export default async function ArizonaPage() {
                         {posts.map((post: any) => (
                          
                             <li key={post._id}>
-                                   <p>...</p>
                                 <div className="arizonaPost">
                                     <div className="flex-row pointer">
                                         <PublishedAt publishedAt={post?.publishedAt} />
                                         <p className="locationTag">{post?.location}</p>
                                     </div>
-                                    <p>{post?.body}</p>
                                 </div>
                             </li>
                         ))}
