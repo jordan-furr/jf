@@ -22,8 +22,8 @@ export default function MenuOverlay({ onClose, isClosing = false }: MenuOverlayP
             <nav className="menuCont">
                 <Link href="/web" className="menuItem" onClick={onClose}>Website</Link>
                 <Link href="/writing" className="menuItem" onClick={onClose}>Writing</Link>
-                <Link href="/art" className="menuItem" onClick={onClose}>Art</Link>
                 <Link href="/works" className="menuItem" onClick={onClose}>Works</Link>
+                <Link href="/art" className="menuItem" onClick={onClose}>Art</Link>
                 <Link href="/about" className="menuItem" onClick={onClose}>About</Link>
             </nav>
         </div>

@@ -25,11 +25,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body>
         <Header />
         <SideBar imageSrc={imageSrc} />
         {children}
-      </body>
     </html>
   );
 }
