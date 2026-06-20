@@ -1,32 +1,30 @@
 export const likes = [
   { title: "Wind" },
   { title: "Horses" },
+  { title: "Colors" },
+    { title: "Bread" },
+        { title: "Quilts" },
+  { title: "Truth" },
+          { title: "Kim Petras" },
+  { title: "Fire" },
+    { title: "Photos" },
+      { title: "Paper" },
+  { title: "Stars" },
+  { title: "Smoke" },
+  { title: "Chocolate" },
+  { title: "Trees" },
   { title: "Rivers" },
-
-  { title: "Wolves" },
+    { title: "Love" },
+  { title: "Tigers" },
+  { title: "Sun" },
   { title: "Breath" },
   { title: "Light" },
-  { title: "Paper" },
-
-  { title: "Stars" },
-  { title: "Incense" },
-  { title: "Chocolate" },
-  { title: "Love" },
-
-
-  { title: "Trees" },
+  { title: "Oceans" },
   { title: "Mountains" },
-  { title: "Bread" },
-
-  { title: "Honesty" },
-  { title: "Fire" },
-  { title: "Spirit" },
-  { title: "Running" },
-  { title: "The Moon" },
-  { title: "Colors" },
-  { title: "Textiles" },
-  { title: "Stickers" },
   { title: "Words" },
+  { title: "Textiles" },
   { title: "Tea" },
-  { title: "Seasons" }
+  { title: "Seasons" },
+  { title: "Stickers" },
+  { title: "Running" }
 ];

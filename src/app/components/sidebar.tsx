@@ -12,7 +12,7 @@ export default function SideBar({ imageSrc }: SideBarProps) {
 
     const navItems = [
         { href: "/web", label: "Website", color: "#35C6FF" },
-        { href: "/writing", label: "Writing", color: "#0061D6" },
+        { href: "/writing", label: "Writing", color: "#ff9fed" },
         { href: "/works", label: "Works", color: "#2418FF" },
         { href: "/art", label: "Art", color: "#55C500" },
         { href: "/about", label: "About", color: "#f8671d" },
