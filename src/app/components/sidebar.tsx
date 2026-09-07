@@ -29,7 +29,7 @@ export default function SideBar({ imageSrc }: SideBarProps) {
                         alt="Jordan Furr Star with JF Initials"
                         width={300}
                         height={300}
-                        layout="responsive"
+                        style={{ width: '100%', height: 'auto' }}
                         className='sideStar'
                         priority
                     />

@@ -17,7 +17,7 @@ export default async function Page() {
                     <Link
                     href={`/posts/${post?.slug?.current}`}
                     >
-                        <div className="flex-row">
+                        <div className="flex-row postRow">
                             <PublishedAt publishedAt={post?.publishedAt} />
                             <p className="pl3 underline">{post?.title}</p>
                         </div>

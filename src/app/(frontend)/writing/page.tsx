@@ -27,8 +27,8 @@ export default async function Page() {
         <p className="mb3">Notes, meditations, memoir-theory, and inquiries.</p>
 
         <div className="mb3">
-          <p>FEATURED</p>
-          {/* <Link href="/writing/southwest"><p className="wordLink">From Southwest</p></Link> */}
+          {/* <p>FEATURED</p>
+          <Link href="/writing/southwest"><p className="wordLink">From Southwest</p></Link> */}
           <Link href="/writing/why"><p className="wordLink">Why Write</p></Link>
         </div>
 

@@ -5,10 +5,13 @@
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
   font-size: 16px;
   min-height: 100svh;
+}
+
+html {
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -558,10 +561,6 @@ a {
   margin-right: 3rem;
 }
 
-.ml6 {
-  margin-left: 3rem;
-}
-
 .mb0 {
   margin-bottom: 0;
 }
@@ -680,6 +679,7 @@ a {
   width: 100%;
   height: 5rem;
   z-index: 1001;
+  background: var(--background);
 }
 
 .header p:hover {
@@ -709,7 +709,6 @@ a {
   top: 0;
   right: 0;
   width: 100%;
-  transition: max-height 0.5s ease;
   background: white;
   overflow: hidden;
   display: flex;
@@ -717,11 +716,10 @@ a {
   z-index: 1000;
   transform: translateY(-100%);
   transition: transform 0.33s ease-in-out;
-  min-height: 100vh;
+  min-height: 100svh;
 }
 
 .menuOverlay.menuOpen {
-  min-height: 100vh;
   transform: translateY(0);
 }
 
@@ -973,6 +971,7 @@ a {
   width: 25vw;
   height: auto;
   position: fixed;
+  margin-top: 5rem;
 }
 
 .sideStar {
@@ -1022,19 +1021,10 @@ a {
 }
 
 
-@media (max-width: 1300px) {
-  .sidebar {
-    margin-top: 2rem;
-  }
-}
-
 @media (max-width: 799px) {
 
   .sidebar {
-    width: 260px;
-    position: relative;
-    margin: auto;
-    margin-top: 3rem;
+    display: none;
   }
 
   .sideMenu,
@@ -1046,7 +1036,7 @@ a {
     margin: 0;
     width: 100%;
     padding: 1.5rem;
-    padding-top: 3.3rem;
+    padding-top: 6.5rem;
   }
 
   .contactBtn {
@@ -1135,7 +1125,13 @@ h1 {
 }
 
 .publishedDate {
-  flex: 0 0 140px;
+  display: flex;
+}
+
+/* the blog index lines titles up in a column, so the date needs a fixed track;
+   the Southwest list uses space-between instead and must stay auto-width */
+.postRow .publishedDate {
+  flex: 0 0 8.75rem;
 }
 
 .pointer {
@@ -1178,7 +1174,10 @@ h1 {
 }
 .locationTag {
   background-color: #0077ed;
-  border-radius: 30%;
+  border-radius: 30px;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
 }
 
 
@@ -1217,7 +1216,6 @@ h1 {
 /* websites */
 .site-list {
   position: relative;
-  display: inline-block;
   display: flex;
   flex-direction: column;
   gap: 2px;
