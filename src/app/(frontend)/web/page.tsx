@@ -34,6 +34,7 @@ export default function Page() {
             <Link href="https://www.amberlater.com/" target="_"><p>Amber Later</p></Link>
             <Link href="https://www.theupsideofuncertainty.com/" target="_"><p>The Upside of Uncertainty</p></Link>
             <Link href="https://madewithharmony.com/" target="_"><p>Made with Harmony</p></Link>
+            <Link href="https://equinimitytucson.com/" target="_"><p>Equinimity Tucson</p></Link>
             <Link href="https://harmonpsychotherapy.com/" target="_"><p>Harmon Psychotherapy & Consulting</p></Link>
             <Link href="https://spintheupwheel.netlify.app/" target="_"><p>42 Tool Selector</p></Link>
             <Link href="https://earnestproject.com/" target="_"><p>Earnest Project</p></Link>
