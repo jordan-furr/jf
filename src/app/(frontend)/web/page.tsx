@@ -47,8 +47,8 @@ export default function Page() {
             <p className="mb2">?</p>
             <p>PRICING FOR DESIGN + CUSTOM DEVELOPMENT</p>
             <p>Simple site: $600-900</p>
-            <p>Portfolio / informative site: $1000-2200</p>
-            <p className="mb4">E-commerce: $1800-4000+</p>
+            <p>Portfolio / informative site: $1,000-2,200</p>
+            <p className="mb4">E-commerce: $1,500-3,000+</p>
             <p className="mb2">Timelines vary depending on scope, from a few weeks to several months</p>
             <p>Cost is lower for website builders or jobs that only require development (no design)</p>
           </div>
