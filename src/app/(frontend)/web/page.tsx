@@ -38,7 +38,7 @@ export default function Page() {
             <Link href="https://harmonpsychotherapy.com/" target="_"><p>Harmon Psychotherapy & Consulting</p></Link>
             <Link href="https://spintheupwheel.netlify.app/" target="_"><p>42 Tool Selector</p></Link>
             <Link href="https://earnestproject.com/" target="_"><p>Earnest Project</p></Link>
-            <Link href="https://centerforexpandingcompassion.org/" target="_"><p>Center For Expanding Compassion</p></Link>
+            {/* <Link href="https://centerforexpandingcompassion.org/" target="_"><p>Center For Expanding Compassion</p></Link> */}
             <Link href="https://upschool.org/" target="_"><p>UP School</p></Link>
             <Link href="https://ezrafurr.com/" target="_"><p>Ezra Geo</p></Link>
           </div>
