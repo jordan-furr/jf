@@ -38,7 +38,7 @@ export default function Page() {
             <Link href="https://harmonpsychotherapy.com/" target="_"><p>Harmon Psychotherapy & Consulting</p></Link>
             <Link href="https://spintheupwheel.netlify.app/" target="_"><p>42 Tool Selector</p></Link>
             <Link href="https://earnestproject.com/" target="_"><p>Earnest Project</p></Link>
-            <Link href="https://centerforexpandingcompassion.org/" target="_"><p>Center For Expanding Compassion</p></Link>
+            {/* <Link href="https://centerforexpandingcompassion.org/" target="_"><p>Center For Expanding Compassion</p></Link> */}
             <Link href="https://upschool.org/" target="_"><p>UP School</p></Link>
             <Link href="https://ezrafurr.com/" target="_"><p>Ezra Geo</p></Link>
           </div>
@@ -47,8 +47,8 @@ export default function Page() {
             <p className="mb2">?</p>
             <p>PRICING FOR DESIGN + CUSTOM DEVELOPMENT</p>
             <p>Simple site: $600-900</p>
-            <p>Portfolio / informative site: $1000-2200</p>
-            <p className="mb4">E-commerce: $1800-4000+</p>
+            <p>Portfolio / informative site: $1,000-2,200</p>
+            <p className="mb4">E-commerce: $1,500-3,000+</p>
             <p className="mb2">Timelines vary depending on scope, from a few weeks to several months</p>
             <p>Cost is lower for website builders or jobs that only require development (no design)</p>
           </div>
