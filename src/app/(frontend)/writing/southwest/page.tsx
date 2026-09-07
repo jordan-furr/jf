@@ -20,7 +20,7 @@ export default async function ArizonaPage() {
                          
                             <li key={post._id}>
                                 <div className="arizonaPost">
-                                    <div className="flex-row pointer">
+                                    <div className="flex-row pointer align-center space-between">
                                         <PublishedAt publishedAt={post?.publishedAt} />
                                         <p className="locationTag">{post?.location}</p>
                                     </div>

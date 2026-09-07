@@ -5,6 +5,9 @@ import Image from "next/image";
 import MenuOverlay from './menu-overlay';
 import { useState, useRef, useEffect } from 'react';
 
+// Must match the .menuOverlay transform transition in globals.css, or the
+// overlay unmounts part-way through its slide-out.
+const CLOSE_DURATION = 330;
 
 export default function Header() {
   const pathname = usePathname();
@@ -13,14 +16,35 @@ export default function Header() {
   const [isClosing, setIsClosing] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
   const menuToggleRef = useRef<HTMLDivElement>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const closeMenu = () => {
     setIsClosing(true);
-    setTimeout(() => {
+    closeTimer.current = setTimeout(() => {
       setMenuOpen(false);
       setIsClosing(false);
-    }, 150);
+    }, CLOSE_DURATION);
   };
+
+  useEffect(() => {
+    return () => {
+      if (closeTimer.current) clearTimeout(closeTimer.current);
+    };
+  }, []);
+
+  // Keep the page behind the overlay still, so closing the menu returns you
+  // to where you were rather than wherever the body scrolled to underneath.
+  // The lock goes on <html>: globals.css sets overflow-x on it, which makes it
+  // the scroll container, so locking <body> alone has no effect.
+  useEffect(() => {
+    if (!menuOpen) return;
+    const root = document.documentElement;
+    const previous = root.style.overflow;
+    root.style.overflow = 'hidden';
+    return () => {
+      root.style.overflow = previous;
+    };
+  }, [menuOpen]);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -72,7 +96,7 @@ export default function Header() {
             alt="Jordan Ellis Furr spiral"
             width={50}
             height={50}
-            layout="responsive"
+            style={{ width: '100%', height: 'auto' }}
             className="spiralIcon"
           />
         </div>

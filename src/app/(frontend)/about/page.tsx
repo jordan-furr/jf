@@ -18,7 +18,7 @@ export default function Page() {
           className="mb3"
           priority
         /> */}
-        <p className="mb3">Writer, artist, designer, editor, developer, runner, friend, contrarian. Let&apos;s be penpals or talk about dreams. I&apos;d love to hear from you. Brooklyn, New York, 11211.</p>
+        <p className="mb3">I am an artist, designer, writer, editor, developer, runner, friend, contrarian. Let&apos;s be penpals or talk about dreams. I&apos;d love to hear from you.</p>
         <Link href={"mailto:jordan@jordanfurr.com"}><p className="mb3 underLink spirit-blue">jordan@jordanfurr.com</p></Link>
 
         <div>

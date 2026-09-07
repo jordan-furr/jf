@@ -1,6 +1,5 @@
 'use client';
 import "../globals.css";
-import Header from "../components/header";
 import { usePathname } from "next/navigation";
 import SideBar from "../components/sidebar";
 
@@ -25,7 +24,6 @@ export default function RootLayout({
 
   return (
     <>
-        <Header />
         <SideBar imageSrc={imageSrc} />
         {children}
     </>
