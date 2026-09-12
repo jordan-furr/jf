@@ -28,13 +28,14 @@ export default function Page() {
           <p>WORK</p>
           <div className="site-list mb5">
             <Link href="https://samewave7.com/" target="_"><p>Samewave7</p></Link>
-            <Link href="https://starlaces.org/" target="_"><p>STAR Laces</p></Link>
             <Link href="https://drink-wall.com/" target="_"><p>drink-wall</p></Link>
+            <Link href="https://leeannslade.com/" target="_"><p>LeeAnn Slade</p></Link>
             <Link href="https://www.hopeaccelerator.com/" target="_"><p>Hope Accelerator</p></Link>
-            <Link href="https://www.amberlater.com/" target="_"><p>Amber Later</p></Link>
-            <Link href="https://www.theupsideofuncertainty.com/" target="_"><p>The Upside of Uncertainty</p></Link>
-            <Link href="https://madewithharmony.com/" target="_"><p>Made with Harmony</p></Link>
+            <Link href="https://starlaces.org/" target="_"><p>STAR Laces</p></Link>
+                        <Link href="https://www.theupsideofuncertainty.com/" target="_"><p>The Upside of Uncertainty</p></Link>
+                                    <Link href="https://madewithharmony.com/" target="_"><p>Made with Harmony</p></Link>
             <Link href="https://equinimitytucson.com/" target="_"><p>Equinimity Tucson</p></Link>
+                        <Link href="https://www.amberlater.com/" target="_"><p>Amber Later</p></Link>
             <Link href="https://harmonpsychotherapy.com/" target="_"><p>Harmon Psychotherapy & Consulting</p></Link>
             <Link href="https://spintheupwheel.netlify.app/" target="_"><p>42 Tool Selector</p></Link>
             <Link href="https://earnestproject.com/" target="_"><p>Earnest Project</p></Link>
