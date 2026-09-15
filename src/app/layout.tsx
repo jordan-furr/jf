@@ -4,6 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ['latin'] })
 import Header from "./components/header";
 import { SanityLive } from "@/sanity/lib/live";
+import { Analytics } from "@vercel/analytics/next";
 
 
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <Header />
         {children}
         <SanityLive />
+        <Analytics />
       </body>
     </html>
   );
