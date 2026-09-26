@@ -9,7 +9,6 @@ export default function Page() {
         
         <p>Brooklyn, New York</p>
         <p>Paris, France</p>
-        <p>Tucson, Arizona</p>
         <p className="mb5">Tucson, Arizona</p>
       </div>
     </div>
