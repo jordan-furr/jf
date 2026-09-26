@@ -877,8 +877,8 @@ a {
   }
 
   .starBG {
-    margin-top: 0;
-    height: calc(100vh - 6rem);
+    margin-top: 4rem;
+    height: 72vh;
   }
 
   .starMenu {
