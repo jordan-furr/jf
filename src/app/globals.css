@@ -751,14 +751,17 @@ a {
 /* home */
 .starBG {
   width: auto;
-  height: 60vh;
+  height: calc(100vh - 6rem);
   margin: 1.5rem;
-  margin-top: 3rem;
+  margin-top: 0;
   background-image: url('/jordanfurr-star.gif');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .starMenu {
@@ -778,7 +781,7 @@ a {
 }
 
 .R1 {
-  margin-top: 16vh;
+  margin-top: 0;
   padding-left: 3rem;
   padding-right: 2rem;
 }
@@ -795,10 +798,6 @@ a {
 
 
 @media (min-width: 440px) {
-
-  .starBG {
-    margin-top: 2rem;
-  }
 
   .R1 {
     margin-top: 15vh;
@@ -819,10 +818,6 @@ a {
 }
 
 @media (min-width: 500px) {
-
-  .starBG {
-    margin-top: 3rem;
-  }
 
   .R1 {
     margin-top: 13vh;
@@ -882,8 +877,8 @@ a {
   }
 
   .starBG {
-    margin-top: 4rem;
-    height: 72vh;
+    margin-top: 0;
+    height: calc(100vh - 6rem);
   }
 
   .starMenu {
