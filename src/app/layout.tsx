@@ -9,8 +9,13 @@ import { Analytics } from "@vercel/analytics/next";
 
 
 export const metadata: Metadata = {
-  title: "Jordan Furr",
-  description: "Jordan Furr",
+  metadataBase: new URL('https://www.jordanfurr.com'),
+  title: {
+    default: 'Jordan Ellis Furr',
+    template: '%s — Jordan Ellis Furr',
+  },
+  description: 'Custom websites, quilting and art, brand design, creative projects, penpal. Tucson, Brooklyn, Paris.',
+  openGraph: { type: 'website', siteName: 'Jordan Ellis Furr' },
 };
 
 export default function RootLayout({

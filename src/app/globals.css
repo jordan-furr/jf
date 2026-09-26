@@ -959,7 +959,8 @@ a {
 .page {
   display: flex;
   width: 100%;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 3rem;
 }
 
 .sidebar {
@@ -967,6 +968,8 @@ a {
   height: auto;
   position: fixed;
   margin-top: 5rem;
+  background-color: white;
+  min-height: calc(100vh - 5rem);
 }
 
 .sideStar {
@@ -1209,6 +1212,11 @@ h1 {
 
 
 /* websites */
+.website-page {
+  background-color: #d00;
+  color: white;
+}
+
 .site-list {
   position: relative;
   display: flex;
