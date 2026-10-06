@@ -6,33 +6,11 @@ export default function Page() {
     <div className="page">
       <div className="content">
         {/* <p className="mb5">I am a fiber artist at large. Quilting has my heart.</p>*/}
-        <div className="flex-row ">
-          <div>
-            <Image
-              src="/boat_large.JPG"
-              alt=""
-              fill
-              sizes="(max-width: 799px) 50vw, 16.7vw"
-              className="coaster-img"
-            />
-            <p>Orange Sunset</p>
-          </div>
-          <div>
-            <Image
-              src="/boat.JPG"
-              alt=""
-              fill
-              sizes="(max-width: 799px) 50vw, 16.7vw"
-              className="coaster-img"
-            />
-            <p>Alive Light</p>
-          </div>
-
-        </div>
+       
 
 
 
-        <p className="mb3">COASTERS, 2025</p>
+        {/* <p className="mb3">COASTERS, 2025</p>
         <div className="photo-grid mb7">
           {imageOrder.map((n) => (
             <div className="coaster" key={n}>
@@ -45,8 +23,8 @@ export default function Page() {
               />
             </div>
           ))}
-        </div>
-        <p className="mb3">FOR SALE</p>
+        </div> */}
+        {/* <p className="mb3">FOR SALE</p> */}
         <div className="flex-row space-between">
           <a className="w-45" href="https://buy.stripe.com/test_7sY00j2ef2mD25n5of6wE00">
             <div className="quiltItem">
@@ -57,12 +35,13 @@ export default function Page() {
                 width={120}
                 height={160}
                 layout="responsive"
-                className="mb3"
+                className="mb2"
               />
-              <div className="flex-row space-between">
+              <div className="flex-row space-between mb1">
                 <p>Orange Sunset</p>
                 <p>$180</p>
               </div>
+              <p>22.5"x12.5"</p>
             </div>
           </a>
           <a className="w-45" href="https://buy.stripe.com/test_7sY00j2ef2mD25n5of6wE00">
@@ -73,12 +52,13 @@ export default function Page() {
                 width={120}
                 height={160}
                 layout="responsive"
-                className="mb3"
+                className="mb2"
               />
-              <div className="flex-row space-between">
-                <p>Alive Light</p>
-                <p>$100</p>
+              <div className="flex-row space-between mb1">
+                <p>Light</p>
+                <p>$110</p>
               </div>
+              <p>20.5"x10.5"</p>
             </div>
           </a>
 

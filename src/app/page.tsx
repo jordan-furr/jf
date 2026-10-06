@@ -8,14 +8,15 @@ export default function Home() {
           <div className="starMenu">
             <div className="sRow R1">
               <Link href="/web"><p className="wordLink">Websites</p></Link>
-              <Link href="/writing"><p className="wordLink">Studio</p></Link>
+              <Link href="/contact"><p className="wordLink">Penpals</p></Link>
             </div>
             <div className="sRow R2">
-              <Link href="/works"><p className="wordLink">Projects</p></Link>
+              <Link href="/art"><p className="wordLink">Quilts</p></Link>
+
               <Link href="/about"><p className="wordLink">About</p></Link>
             </div>
             <div className="sRow R3">
-              <Link href="/art"><p className="wordLink">Quilts</p></Link>
+              <Link href="/works"><p className="wordLink">Projects</p></Link>
             </div>
           </div>
         </div>
