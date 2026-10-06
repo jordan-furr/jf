@@ -6,9 +6,9 @@ export default function Page() {
     <div className="page">
       <div className="content">
         <div className="projectList">
-          <p>I have founded, co-founded, or contributed to:</p>
+          {/* <p>I have founded, co-founded, or contributed to:</p> */}
           <div>
-            <p className="subTitle">STAR Laces <Link href={"https://starlaces.org/"} target="_" className="wordLink green">&#8599;</Link></p>
+            <p className="subTitle">STAR Laces <Link href={"https://starlaces.org/"} target="_blank" rel="noopener noreferrer" className="wordLink green">&#8599;&#xFE0E;</Link></p>
             <Image
               src={"/starlaces.png"}
               alt="STAR Laces Website preview"
@@ -18,10 +18,10 @@ export default function Page() {
               className="mb2"
               priority
             />
-            <p>[STAR LACES retail website, <Link href={"https://starlaces.org/"} target="_" className="wordLink green">live</Link>] One of the first major projects I worked on. I built a team and we won a $7000 grant in 2019 from a Social Innovation competition. I began selling prototypes and growing the brand a year prior.</p>
+            <p>[STAR LACES retail website, <Link href={"https://starlaces.org/"} target="_blank" rel="noopener noreferrer" className="wordLink green">live</Link>] One of the first major projects I worked on. I built a team and we won a $7000 grant in 2019 from a Social Innovation competition. I began selling prototypes and growing the brand a year prior.</p>
           </div>
           <div>
-            <p className="subTitle">SAMEWAVE7 <Link href={"https://samewave7.com/"} target="_" className="wordLink green">&#8599;</Link></p>
+            <p className="subTitle">SAMEWAVE7 <Link href={"https://samewave7.com/"} target="_blank" rel="noopener noreferrer" className="wordLink green">&#8599;&#xFE0E;</Link></p>
              <Image
               src={"/samewave.png"}
               alt="Samewave Website preview"
@@ -31,10 +31,10 @@ export default function Page() {
               className="mb2"
               priority
             />
-            <p className="mb3">[SAMEWAVE7 archive, <Link href={"https://samewave7.com/"} target="_" className="wordLink green">live</Link>] Artist Collective I participate in. We create editorial content and occasionally take commissions or sell goods.</p>
+            <p className="mb3">[SAMEWAVE7 archive, <Link href={"https://samewave7.com/"} target="_blank" rel="noopener noreferrer" className="wordLink green">live</Link>] Artist Collective I participate in. We create editorial content and occasionally take commissions or sell goods.</p>
           </div>
           <div>
-            <p className="subTitle">drink-wall <Link href={"https://drink-wall.com/"} target="_" className="wordLink green">&#8599;</Link></p>
+            <p className="subTitle">drink-wall <Link href={"https://drink-wall.com/"} target="_blank" rel="noopener noreferrer" className="wordLink green">&#8599;&#xFE0E;</Link></p>
             <Image
               src={"/drinkwall.png"}
               alt="Drink-Wall Website preview"
@@ -44,7 +44,7 @@ export default function Page() {
               className="mb2"
               priority
             />
-            <p>[drink-wall website, <Link href={"https://drink-wall.com/"} target="_" className="wordLink green">live</Link>] a journal for visual drink + food displays in grocery and deli stores globally</p>
+            <p>[drink-wall website, <Link href={"https://drink-wall.com/"} target="_blank" rel="noopener noreferrer" className="wordLink green">live</Link>] a journal for visual drink + food displays in grocery and deli stores globally</p>
           </div>
           <div>
             <p className="subTitle">Green Butterfly</p>

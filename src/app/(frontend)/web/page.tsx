@@ -29,20 +29,20 @@ export default function Page() {
 
           <p className="mb1">SELECTED WORK</p>
           <div className="site-list mb5">
-            <Link href="https://samewave7.com/" target="_"><p>Samewave7</p></Link>
-            <Link href="https://drink-wall.com/" target="_"><p>drink-wall</p></Link>
-            <Link href="https://leeannslade.com/" target="_"><p>LeeAnn Slade</p></Link>
-            <Link href="https://www.hopeaccelerator.com/" target="_"><p>Hope Accelerator</p></Link>
-            <Link href="https://starlaces.org/" target="_"><p>STAR Laces</p></Link>
-                        <Link href="https://www.theupsideofuncertainty.com/" target="_"><p>The Upside of Uncertainty</p></Link>
-                                    <Link href="https://madewithharmony.com/" target="_"><p>Made with Harmony</p></Link>
-            <Link href="https://equinimitytucson.com/" target="_"><p>Equinimity Tucson</p></Link>
-                        <Link href="https://www.amberlater.com/" target="_"><p>Amber Later</p></Link>
-            <Link href="https://spintheupwheel.netlify.app/" target="_"><p>42 Tool Selector</p></Link>
-            <Link href="https://earnestproject.com/" target="_"><p>Earnest Project</p></Link>
-            {/* <Link href="https://centerforexpandingcompassion.org/" target="_"><p>Center For Expanding Compassion</p></Link> */}
-            {/* <Link href="https://upschool.org/" target="_"><p>UP School</p></Link>
-            <Link href="https://ezrafurr.com/" target="_"><p>Ezra Geo</p></Link> */}
+            <Link href="https://samewave7.com/" target="_blank" rel="noopener noreferrer"><p>Samewave7</p></Link>
+            <Link href="https://drink-wall.com/" target="_blank" rel="noopener noreferrer"><p>drink-wall</p></Link>
+            <Link href="https://leeannslade.com/" target="_blank" rel="noopener noreferrer"><p>LeeAnn Slade</p></Link>
+            <Link href="https://www.hopeaccelerator.com/" target="_blank" rel="noopener noreferrer"><p>Hope Accelerator</p></Link>
+            <Link href="https://starlaces.org/" target="_blank" rel="noopener noreferrer"><p>STAR Laces</p></Link>
+                        <Link href="https://www.theupsideofuncertainty.com/" target="_blank" rel="noopener noreferrer"><p>The Upside of Uncertainty</p></Link>
+                                    <Link href="https://madewithharmony.com/" target="_blank" rel="noopener noreferrer"><p>Made with Harmony</p></Link>
+            <Link href="https://equinimitytucson.com/" target="_blank" rel="noopener noreferrer"><p>Equinimity</p></Link>
+                        <Link href="https://www.amberlater.com/" target="_blank" rel="noopener noreferrer"><p>Amber Later</p></Link>
+            <Link href="https://spintheupwheel.netlify.app/" target="_blank" rel="noopener noreferrer"><p>42 Tool Selector</p></Link>
+            <Link href="https://earnestproject.com/" target="_blank" rel="noopener noreferrer"><p>Earnest Project</p></Link>
+            {/* <Link href="https://centerforexpandingcompassion.org/" target="_blank" rel="noopener noreferrer"><p>Center For Expanding Compassion</p></Link> */}
+            {/* <Link href="https://upschool.org/" target="_blank" rel="noopener noreferrer"><p>UP School</p></Link>
+            <Link href="https://ezrafurr.com/" target="_blank" rel="noopener noreferrer"><p>Ezra Geo</p></Link> */}
           </div>
 
           <div className="mb4">
