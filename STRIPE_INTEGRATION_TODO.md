@@ -11,7 +11,7 @@ The following values are placeholders and must be updated before going live.
 | Field | Current Value | What to Set |
 |-------|--------------|-------------|
 | mode | payment | Set to "payment" for one-time charges (quilts) or "subscription" for recurring billing. `payment` is correct for one-off quilt sales. |
-| success_url | `${origin}/art?success=true&session_id={CHECKOUT_SESSION_ID}` | Your actual post-payment success page URL. Keep the `{CHECKOUT_SESSION_ID}` template. Currently sends buyers back to `/art` — consider a dedicated thank-you page. |
+| success_url | `${origin}/thanks` | ✅ Set — thank-you page at [src/app/(frontend)/thanks/page.tsx](src/app/(frontend)/thanks/page.tsx). |
 | cancel_url | `${origin}/art` | Your actual cancel/return page URL. `/art` is likely fine. |
 | `quilts.orange.id` | price_1UOJlUDmpUhmwBg08if9PgKq | ✅ Set (Orange quilt, product prod_VKpzlTaCfa3Dcn). |
 | `quilts.light.id` | price_1UOJlUDmpUhmwBg09rSbxiH2 | ✅ Set (Light quilt, product prod_VKq1md2hQrryok). |
@@ -72,7 +72,7 @@ To add a quilt: add an entry to `quilts` in src/app/quilts.ts; the page lists it
 
 - **Marking a quilt sold:** set `sold: true` for it in [src/app/quilts.ts](src/app/quilts.ts) and deploy. The page shows SOLD and its checkout link stops working. Optionally also archive the price in Stripe. To automate this, add a webhook for `checkout.session.completed`.
 - **Fulfillment:** you'll get Dashboard + email notifications for each payment; shipping address is on the payment in the Dashboard.
-- **Success page:** show a "thanks!" message when `?success=true` is present, or create a dedicated page.
+- **Receipts:** the thank-you page promises an email receipt — turn on Settings → Customer emails → Successful payments in the Stripe Dashboard.
 - **Go live:** swap to live keys and live Price IDs.
 
 ## Resources
