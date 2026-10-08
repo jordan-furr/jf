@@ -31,7 +31,7 @@ export async function GET(req: NextRequest) {
     integration_identifier: "hosted_web_0001",
     origin_context: "web",
     branding_settings: { button_color: "#35C6FF" },
-    success_url: `${origin}/art?success=true&session_id={CHECKOUT_SESSION_ID}`,
+    success_url: `${origin}/thanks`,
     cancel_url: `${origin}/art`,
     line_items: [lineItem],
   });
