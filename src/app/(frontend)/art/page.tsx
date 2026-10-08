@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { quilts } from "../../quilts";
 
 export default function Page() {
   const imageOrder = [10, 1, 9, 4, 7, 11, 2, 8];
@@ -26,42 +27,33 @@ export default function Page() {
         </div> */}
         {/* <p className="mb3">FOR SALE</p> */}
         <div className="flex-row space-between">
-          <a className="w-45" href="https://buy.stripe.com/test_7sY00j2ef2mD25n5of6wE00">
-            <div className="quiltItem">
-
-              <Image
-                src="/boat.JPG"
-                alt=""
-                width={120}
-                height={160}
-                layout="responsive"
-                className="mb2"
-              />
-              <div className="flex-row space-between mb1">
-                <p>Orange Sunset</p>
-                <p>$180</p>
+          {Object.entries(quilts).filter(([, quilt]) => !("hidden" in quilt)).map(([key, quilt]) => {
+            const item = (
+              <div className="quiltItem">
+                <Image
+                  src={quilt.image}
+                  alt=""
+                  width={120}
+                  height={160}
+                  layout="responsive"
+                  className="mb2 quiltImg"
+                />
+                <div className="flex-row space-between mb1">
+                  <p>{quilt.name}</p>
+                  <p>{quilt.price}</p>
+                </div>
+                <div className="flex-row space-between">
+                  <p>{quilt.size}</p>
+                  {quilt.sold && <p className="sold">SOLD</p>}
+                </div>
               </div>
-              <p>22.5"x12.5"</p>
-            </div>
-          </a>
-          <a className="w-45" href="https://buy.stripe.com/test_7sY00j2ef2mD25n5of6wE00">
-            <div className="quiltItem">
-              <Image
-                src="/triangle.JPG"
-                alt=""
-                width={120}
-                height={160}
-                layout="responsive"
-                className="mb2"
-              />
-              <div className="flex-row space-between mb1">
-                <p>Light</p>
-                <p>$110</p>
-              </div>
-              <p>20.5"x10.5"</p>
-            </div>
-          </a>
-
+            );
+            return quilt.sold ? (
+              <div className="w-45" key={key}>{item}</div>
+            ) : (
+              <a className="w-45" href={`/api/checkout?item=${key}`} key={key}>{item}</a>
+            );
+          })}
         </div>
       </div>
     </div>
