@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 import { quilts, QuiltKey } from "../../quilts";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 export async function GET(req: NextRequest) {
   const key = req.nextUrl.searchParams.get("item") ?? "";
   const item = Object.hasOwn(quilts, key) ? quilts[key as QuiltKey] : undefined;
@@ -17,6 +15,7 @@ export async function GET(req: NextRequest) {
         quantity: 1,
       };
 
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
   const origin = req.nextUrl.origin;
   const session = await stripe.checkout.sessions.create({
     ui_mode: "hosted_page",

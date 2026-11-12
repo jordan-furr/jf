@@ -20,18 +20,6 @@ export const quilts = {
     amount: 15000,
     sold: false,
   },
-  // $1 test item (product prod_UJ6fh9EZdBgbPX). Not listed on the page;
-  // buy it at /api/checkout?item=test. Remove when done testing.
-  test: {
-    name: "Test",
-    image: "/coaster-4.png",
-    price: "$1",
-    size: "",
-    id: "price_1UOJlVDmpUhmwBg0qGTFkARP",
-    amount: 100,
-    sold: false,
-    hidden: true,
-  },
 };
 
 export type QuiltKey = keyof typeof quilts;

@@ -48,9 +48,9 @@ export default function Page() {
           <div className="mb4">
             <p className="mb2">?</p>
             <p className="mb1">PRICING</p>
-            <p>Simple site: $600-900</p>
-            <p>Portfolio / informative site: $1,000-2,200</p>
-            <p className="mb4">E-commerce: $1,500-3,000+</p>
+            <p>Simple site: $500-1000</p>
+            <p>Portfolio / informative site: $1,000-2,500</p>
+            <p className="mb4">E-commerce: $1,800-4,000+</p>
             <p className="mb2">Timelines run from a few weeks to several months depending on scope.</p>
           </div>
 
